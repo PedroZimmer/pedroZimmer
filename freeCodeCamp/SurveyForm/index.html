@@ -1,0 +1,177 @@
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Pesquisa sobre satisfação</h1>
+      <p id="description" class="description text-center">
+        Obrigado por ajudar-nos a melhorar nossa empresa.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nome</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          class="form-control"
+          placeholder="Insira seu nome"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Insira seu e-mail"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Idade<span class="clue">(opcional)</span></label
+        >
+        <input
+          type="number"
+          name="idade"
+          id="number"
+          min="18"
+          max="99"
+          class="form-control"
+          placeholder="Insira sue idade"
+        />
+      </div>
+      <div class="form-group">
+        <p>Qual opção descreve melhor sua experiência hoje na empresa?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Selecione...</option>
+          <option value="perfeito">Foi perfeito</option>
+          <option value="satisfeito">Satisfeito</option>
+          <option value="mediano">Mediano</option>
+          <option value="ruim">Ruim</option>
+          <option value="pessima">Péssima</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Você recomendaria nossa empresa?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="certeza"
+            type="radio"
+            class="input-radio"
+            checked
+          />Com certeza</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="talvez"
+            type="radio"
+            class="input-radio"
+          />Talvez</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="naorecomendaria"
+            type="radio"
+            class="input-radio"
+          />Não</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Do que você mais gostou aqui?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Selecione...</option>
+          <option value="atendimento">Atendimento</option>
+          <option value="produtos">Produtos</option>
+          <option value="estrutura">Estrutura</option>
+          <option value="nadademais">Nada de mais</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>O quê você acha que seria legal de nós atualizarmos na empresa?</p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Infraestrutura</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Mindset</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="data-visualization"
+            type="checkbox"
+            class="input-checkbox"
+          />Marketing</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Eventos</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="open-source-community"
+            type="checkbox"
+            class="input-checkbox"
+          />Restaurante</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="gitter-help-rooms"
+            type="checkbox"
+            class="input-checkbox"
+          />Funcionários</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="videos"
+            type="checkbox"
+            class="input-checkbox"
+          />Website</label>
+      </div>
+  
+      <div class="form-group">
+        <p>Alguma outra sugestão?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Escreva aqui..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+  

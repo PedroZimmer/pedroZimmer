@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Desafio Aula #11</h1>
+    Onde você mora:<input type="text" id="country" name="country" />
+    <input type="button" value="Verificar" onclick="verificar()" />
+    <div id="res">Resultado aparecerá aqui...</div>
+    <div id="mora"></div>
+    <script>
+      function verificar() {
+        var pais = document.querySelector(`input#country`);
+        var res = document.getElementById("res");
+        var mora = document.getElementById("mora");
+        var onde = String(pais.value);
+        mora.innerHTML = `<p>Você mora no ${onde}`
+        if (onde == "Brasil") {
+          res.innerHTML = `<p>Você é Brasileiro</p>`;
+        } else {
+          res.innerHTML = `<p>Você é estrangeiro</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>

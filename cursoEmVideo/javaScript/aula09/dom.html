@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM</title>
+    <style>
+      body {
+        background-color: aqua;
+        color: black;
+        font: normal 20pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em javaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        /*
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('esta escrito assim:' + p1.innerText)
+        p1.style.color = 'blue'
+        POR TAGNAME */
+
+        var d = window.document.getElementById('msg') /*POR ID*/
+        d.style.background = 'green'
+        d.innerText = 'Estou'
+
+        
+
+    </script>
+  </body>
+</html>

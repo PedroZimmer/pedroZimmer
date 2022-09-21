@@ -1,0 +1,15 @@
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\bin\Debug\net6.0\HellloWorld.exe
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\bin\Debug\net6.0\HellloWorld.deps.json
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\bin\Debug\net6.0\HellloWorld.runtimeconfig.json
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\bin\Debug\net6.0\HellloWorld.dll
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\bin\Debug\net6.0\HellloWorld.pdb
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\HellloWorld.csproj.AssemblyReference.cache
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\HellloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\HellloWorld.AssemblyInfoInputs.cache
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\HellloWorld.AssemblyInfo.cs
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\HellloWorld.csproj.CoreCompileInputs.cache
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\HellloWorld.dll
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\refint\HellloWorld.dll
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\HellloWorld.pdb
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\HellloWorld.genruntimeconfig.cache
+C:\#Dev\Projetos\C# Básico\HellloWorld\HellloWorld\obj\Debug\net6.0\ref\HellloWorld.dll
