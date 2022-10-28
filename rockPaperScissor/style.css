@@ -1,0 +1,20 @@
+
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: rgb(107, 107, 255);
+}
+
+p {
+    /*colocar os emoji no meio*/
+    text-align: center;
+    font-size: 50px;
+    /*deixar lado a lado*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
