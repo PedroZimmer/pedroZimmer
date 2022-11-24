@@ -1,0 +1,2 @@
+Linha gerada com a função 'write' do Python 
+Linha gerada com a função 'write' do Python 

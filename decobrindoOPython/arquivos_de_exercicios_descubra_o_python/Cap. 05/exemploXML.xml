@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<person>
+  <firstname>Dani</firstname>
+  <lastname>Monteiro</lastname>
+  <home>São Paulo</home>
+  <skill name="SQL Server"/>
+  <skill name="MongoDB"/>
+  <skill name="Cassandra"/>
+  <skill name="Python"/>
+  <skill name="Spark"/>
+  <skill name="BigQuery"/>
+</person>
