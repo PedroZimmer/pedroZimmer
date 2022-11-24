@@ -7,3 +7,8 @@ import shutil
 from shutil import make_archive
 from zipfile import ZipFile
 
+
+
+
+def criaZipModo1():
+    shutil.make_archive("ArquivoCompactado", "zip", )
