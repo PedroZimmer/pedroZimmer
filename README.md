@@ -3,6 +3,8 @@
 * Working on the development of a website for the Institute [Somos Agape](https://github.com/LopesLeandro/Agape_Project)
 * Bachelor's student in Software Engineering at Univille (3/9)
 
+
+
 <div style="display: inline_block"><br>
   <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
   <img align="center" alt="c#" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
