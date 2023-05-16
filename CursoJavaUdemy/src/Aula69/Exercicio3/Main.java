@@ -6,25 +6,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        lista[] notes = new lista[3];
-
-        System.out.println("Nome:");
-        String name = sc.nextLine();
-        System.out.println("Notas:");
-        for (int i = 0; i < 3; i++) lista[i] = sc.nextDouble();
-
-
-
-
-
-
-
-
-
-
-
-
+        Aluno aluno1;
+        aluno1 = new Aluno();
+        aluno1.setNome();
+        aluno1.setNotas();
+        aluno1.getMedia();
+        System.out.println(aluno1.toString());
 
 
     }
