@@ -14,15 +14,22 @@ public class Main {
         int numColuna = sc.nextInt();
         int[][] mat = new int[numLinha][numColuna];
 
+
         for (int i=0; i< mat.length; i++) {
             for (int j=0; j<mat[i].length; j++) {
                 mat[i][j] = sc.nextInt();
             }
         }
 
-        System.out.println("Informe o número que deseja encontrar: ");
 
+        System.out.println("Informe o número que deseja encontrar: ");
         int num = sc.nextInt();
+        Search.search(mat, num);
+
+
+
+
+
 
 
 
