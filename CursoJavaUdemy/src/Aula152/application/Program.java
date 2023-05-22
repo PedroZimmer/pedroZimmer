@@ -1,5 +1,6 @@
 package Aula152.application;
 
+import Aula146.entities.enums.OrderStatus;
 import Aula152.entities.Client;
 import Aula152.entities.Order;
 
@@ -32,6 +33,8 @@ public class Program {
         String status = sc.nextLine();
         System.out.println("How many items to this order? ");
         int n = sc.nextInt();
+
+        Order order = new Order(new Date(), OrderStatus.valueOf(status));
 
         for (int i = 1; i <= n; i++) {
             System.out.println("Enter #" + i + " item data: ");
