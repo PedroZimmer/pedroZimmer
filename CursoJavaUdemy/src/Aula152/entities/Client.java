@@ -20,4 +20,8 @@ public class Client {
 
     }
 
+    public String toString() {
+        return name + " (" + birthDate + ") - " + email;
+    }
+
 }
