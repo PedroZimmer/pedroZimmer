@@ -34,7 +34,7 @@ public class Program {
         System.out.println("Status: ");
         String status = sc.nextLine();
 
-        Order order = new Order(new Date(), OrderStatus.valueOf(status));
+        Order order = new Order(new Date(), OrderStatus.valueOf(status), client);
 
         System.out.println("How many items to this order? ");
         int n = sc.nextInt();
@@ -52,13 +52,17 @@ public class Program {
             System.out.println("Quantity: ");
             int quantity = sc.nextInt();
 
-            OrderItem orderItem = new OrderItem(quantity, productPrice);
+            OrderItem orderItem = new OrderItem(quantity, productPrice, product);
 
-
+            order.addItem(orderItem);
 
 
 
         }
+
+        System.out.println();
+        System.out.println("ORDER SUMMARY: ");
+        System.out.println(order);
 
         sc.close();
 
