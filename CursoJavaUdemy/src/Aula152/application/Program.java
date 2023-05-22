@@ -3,6 +3,8 @@ package Aula152.application;
 import Aula146.entities.enums.OrderStatus;
 import Aula152.entities.Client;
 import Aula152.entities.Order;
+import Aula152.entities.OrderItem;
+import Aula152.entities.Product;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -31,10 +33,11 @@ public class Program {
         System.out.println("Enter order data: ");
         System.out.println("Status: ");
         String status = sc.nextLine();
-        System.out.println("How many items to this order? ");
-        int n = sc.nextInt();
 
         Order order = new Order(new Date(), OrderStatus.valueOf(status));
+
+        System.out.println("How many items to this order? ");
+        int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++) {
             System.out.println("Enter #" + i + " item data: ");
@@ -43,8 +46,18 @@ public class Program {
             String productName = sc.nextLine();
             System.out.println("Product price: ");
             double productPrice = sc.nextDouble();
+
+            Product product = new Product(productName, productPrice);
+
             System.out.println("Quantity: ");
             int quantity = sc.nextInt();
+
+            OrderItem orderItem = new OrderItem(quantity, productPrice);
+
+
+
+
+
         }
 
         sc.close();
