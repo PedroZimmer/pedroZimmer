@@ -20,10 +20,12 @@ public class Order {
     public Order() {
     }
 
-    public Order(Date moment, OrderStatus status) {
+    public Order(Date moment, OrderStatus status, Client client) {
         this.moment = moment;
         this.status = status;
+        this.client = client;
     }
+
 
     public void addItem(OrderItem item) {
         orderItems.add(item);
@@ -43,6 +45,24 @@ public class Order {
         }
 
         return sum;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Order moment: ");
+        sb.append(moment);
+        sb.append("\nOrder status: ");
+        sb.append(status);
+        sb.append("\nClient: ");
+        sb.append(client);
+        sb.append("\nOrder items: \n");
+        for (OrderItem item : orderItems) {
+            sb.append(item);
+            sb.append("\n");
+        }
+        sb.append("Total price: $");
+        sb.append(String.format("%.2f", total()));
+        return sb.toString();
     }
 
 }
