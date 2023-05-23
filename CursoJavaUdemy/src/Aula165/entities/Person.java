@@ -28,4 +28,6 @@ public abstract class Person {
     public void setAnnualIncome(Double annualIncome) {
         this.annualIncome = annualIncome;
     }
+
+    public abstract Double tax();
 }
