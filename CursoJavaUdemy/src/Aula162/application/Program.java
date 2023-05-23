@@ -30,9 +30,9 @@ public class Program {
             String name = sc.nextLine();
             System.out.println("Price: ");
             double price = sc.nextDouble();
-            if (ch == 'c') {
+            if (ch == 'c' || ch == 'C') {
                 list.add(new Product(name, price));
-            } else if (ch == 'u') {
+            } else if (ch == 'u' || ch == 'U') {
                 System.out.println("Manufacture date (DD/MM/YYYY): ");
                 Date manufactureDate = sdf.parse(sc.next());
                 list.add(new UsedProduct(name, price, manufactureDate));
