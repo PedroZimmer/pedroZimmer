@@ -28,7 +28,7 @@ public class Product {
         this.price = price;
     }
 
-    public final String priceTag() {
+    public String priceTag() {
         return name + " $ " + String.format("%.2f", price);
     }
 }
