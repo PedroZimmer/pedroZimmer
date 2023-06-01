@@ -17,7 +17,7 @@ public class Program {
         System.out.print("Data (dd/MM/yyyy): ");
         String data = sc.next();
         System.out.print("Valor do contrato: ");
-        double valorContrato = sc.nextDouble();
+        double totalValue = sc.nextDouble();
         System.out.println("Entre com o número de parcelas: ");
         int numeroParcelas = sc.nextInt();
 
