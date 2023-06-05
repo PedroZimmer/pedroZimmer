@@ -1,29 +1,33 @@
 package Aula229_ExercicioFix.model.entities;
 
+import Aula229_ExercicioFix.model.services.ContractService;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Locale;
 
 public class Contract {
 
     private Integer number;
-    private Date date;
+    private LocalDate date;
     private Double totalValue;
     private Installment installment;
+    private ContractService contractService;
+
+    private List<Installment> installments = new ArrayList<>();
 
     public Contract() {
     }
 
-    public Contract(Integer number, Date date, Double totalValue) {
+    public Contract(Integer number, LocalDate date, Double totalValue) {
         this.number = number;
         this.date = date;
         this.totalValue = totalValue;
     }
 
-    public Contract(Integer number, Date date, Double totalValue, Installment installment) {
-        this.number = number;
-        this.date = date;
-        this.totalValue = totalValue;
-        this.installment = installment;
-    }
+
 
     public Integer getNumber() {
         return number;
@@ -33,11 +37,11 @@ public class Contract {
         this.number = number;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
@@ -49,11 +53,15 @@ public class Contract {
         this.totalValue = totalValue;
     }
 
-    public Installment getInstallment() {
-        return installment;
+    public List<Installment> getInstallment() {
+        return installments;
     }
 
     public void setInstallment(Installment installment) {
-        this.installment = installment;
+        installments.add(installment);
     }
+
+
+
+
 }

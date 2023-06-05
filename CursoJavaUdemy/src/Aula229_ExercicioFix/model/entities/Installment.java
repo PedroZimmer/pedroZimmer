@@ -1,25 +1,30 @@
 package Aula229_ExercicioFix.model.entities;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Installment {
 
-    private Date dueDate;
+    private LocalDate dueDate;
     private Double amount;
+
+    private Integer months;
 
     public Installment() {
     }
 
-    public Installment(Date dueDate, Double amount) {
+    public Installment(LocalDate dueDate, Double amount, Integer months) {
         this.dueDate = dueDate;
         this.amount = amount;
+        this.months = months;
+
     }
 
-    public Date getDueDate() {
+    public LocalDate getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(Date dueDate) {
+    public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
 
@@ -30,4 +35,11 @@ public class Installment {
     public void setAmount(Double amount) {
         this.amount = amount;
     }
+
+
+    public String toString(){
+        return dueDate + " - " + amount;
+    }
 }
+
+
