@@ -20,6 +20,7 @@ public class DB {
                 throw new DbException(e.getMessage());
             }
         }
+        System.out.println("Conectado!");
         return conn;
     }
 
@@ -35,7 +36,7 @@ public class DB {
     }
 
     public static Properties loadProperties() {
-        try (FileInputStream fs = new FileInputStream("db.properties")) {
+        try (FileInputStream fs = new FileInputStream("src/db.properties")) {
             Properties props = new Properties();
             props.load(fs);
             return props;
@@ -45,5 +46,29 @@ public class DB {
         }
 
     }
+
+    public static void closeStatement(java.sql.Statement st){
+        if(st != null){
+            try{
+                st.close();
+            }
+            catch(java.sql.SQLException e){
+                throw new DbException(e.getMessage());
+            }
+        }
+    }
+
+    public static void closeResultSet(java.sql.ResultSet rs){
+        if(rs != null){
+            try{
+                rs.close();
+            }
+            catch(java.sql.SQLException e){
+                throw new DbException(e.getMessage());
+            }
+        }
+    }
+
+
 
 }
