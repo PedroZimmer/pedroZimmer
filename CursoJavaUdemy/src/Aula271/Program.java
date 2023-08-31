@@ -17,12 +17,13 @@ public class Program {
         PreparedStatement st = null;
 
         try {
-            conn = DB.getConnection();
-            st = conn.prepareStatement(
+            conn = DB.getConnection(); // get the connection
+            st = conn.prepareStatement( // prepare the statement
                     "INSERT INTO seller " +
                         "(Name, Email, BirthDate, BaseSalary, DepartmentId) " +
                         "VALUES " +
-                        "(?, ?, ?, ?, ?)");
+                        "(?, ?, ?, ?, ?)", // ? is a placeholder
+                        Statement.RETURN_GENERATED_KEYS); // Statement.RETURN_GENERATED_KEYS is a constant that tells the database to return the generated keys
             st.setString(1, "Pedro Gameplays");
             st.setString(2, "pedrinhogameplays@email.com");
             st.setDate(3, new java.sql.Date(sdf.parse("22/04/1985").getTime()));
@@ -31,7 +32,16 @@ public class Program {
 
             int rowsAffected = st.executeUpdate();
 
-            System.out.println("Done! Rows affected: " + rowsAffected);
+            if (rowsAffected > 0) {
+                ResultSet rs = st.getGeneratedKeys(); // getGeneratedKeys() returns a ResultSet
+                while (rs.next()) { // ResultSet is an iterator
+                    int id = rs.getInt(1); // get the first column of the ResultSet
+                    System.out.println("Done! Id = " + id); // print the id
+                }
+            }
+            else { // if no rows were affected, print this
+                System.out.println("No rows affected!"); // if no rows were affected, print this
+            }
 
 
         }
