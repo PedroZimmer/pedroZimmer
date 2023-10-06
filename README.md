@@ -1,7 +1,7 @@
 ## Pedro Eccel Zimmermann!
 
 * Working on the development of a website for the Institute [Somos Agape](https://github.com/LopesLeandro/Agape_Project)
-* Bachelor's student in Software Engineering at Univille (3/9)
+* Bachelor's student in Software Engineering at Univille (4/9)
 
 <div style="display: inline_block; margin-top: -23px"><br>
   <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
