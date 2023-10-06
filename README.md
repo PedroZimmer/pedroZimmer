@@ -18,5 +18,5 @@
   <a href="https://www.instagram.com/pedrozimmer_/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
   <a href = "mailto:pedroxlzmm@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/pedrozmm/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" ></a> 
-  <a href=" https://pedrozimmer.github.io/curriculo2023/" target="_blank"><img src="https://img.shields.io/badge/-Curr%C3%ADculo-white" target="_blank" height="28">
+  <a href=" https://pedrozimmer.github.io/curriculo2023" target="_blank"><img src="https://img.shields.io/badge/-Curr%C3%ADculo-white" target="_blank" height="28">
 </div>
