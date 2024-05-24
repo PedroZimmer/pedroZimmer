@@ -1,6 +1,7 @@
 package Aula274;
 
 import db.DB;
+import db.DbException;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -15,6 +16,9 @@ public class Program {
 
         try {
             conn = DB.getConnection(); // get the connection
+
+            conn.setAutoCommit(false); // set the auto commit to false
+
             st = conn.createStatement(); // create the statement
 
             int rows1 = st.executeUpdate( // execute the statement
@@ -24,15 +28,17 @@ public class Program {
                     "DepartmentId = 1");
 
             int x = 1;
-            if (x < 2) {
-                throw new SQLException("Fake error");
-            }
+//            if (x < 2) {
+//                throw new SQLException("Fake error");
+//            }
 
             int rows2 = st.executeUpdate( // execute the statement
                     "UPDATE seller " +
                     "SET BaseSalary = 3090 " +
                     "WHERE " +
                     "DepartmentId = 2");
+
+            conn.commit(); // commit the changes
 
 
 
@@ -41,7 +47,12 @@ public class Program {
 
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            try {
+                conn.rollback(); // rollback the changes
+                throw new DbException("Transaction rolled back! Caused by: " + e.getMessage());
+            } catch (SQLException ex) {
+                throw new DbException("Error trying to rollback! Caused by: " + e.getMessage());
+            }
         }
         finally {
             DB.closeStatement(st);
