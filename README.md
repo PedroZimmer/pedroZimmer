@@ -1,16 +1,29 @@
 ## Pedro Eccel Zimmermann!
 
-* Working on the development of a website for the Institute [Somos Agape](https://github.com/LopesLeandro/Agape_Project)
-* Bachelor's student in Software Engineering at Univille (4/9)
+<!-- * Working on the development of a website for the Institute [Somos Agape](https://github.com/LopesLeandro/Agape_Project) -->
+* I am an intern in systems development at WEG.
+* I am an accounting assistant and I am familiar with most of the accounting processes of a company.
+* Bachelor's student in Software Engineering at Univille(SC - Brasil) (6/9)
 
 <div style="display: inline_block; margin-top: -23px"><br>
-  <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img align="center" alt="c#" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
-  <img align="center" alt="Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+  <img align="center" alt="Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+          
   <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+  <img align="center" alt="Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+  <img align="center" alt="Handlebars" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/handlebars/handlebars-original.svg">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" />
+          
+          
+
+  <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
   <img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" height="30" width="40" />
+
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+          
+
 </div>
 <div><p></div>
 
